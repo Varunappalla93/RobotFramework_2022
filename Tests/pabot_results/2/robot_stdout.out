@@ -1,0 +1,14 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.testDemo3 :: To Validate the login form and check if shop page is loa...
+==============================================================================
+Validate child window login functionality                             | PASS |
+------------------------------------------------------------------------------
+Tests.testDemo3 :: To Validate the login form and check if shop pa... | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\VARUN\Desktop\Varun_Personal\RobotFramework_2022\Tests\pabot_results\2\output.xml

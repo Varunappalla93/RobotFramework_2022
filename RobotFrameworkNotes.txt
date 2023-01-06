@@ -1,0 +1,62 @@
+pip install robotframework -> to install RF library.
+pip install robotframework-seleniumlibrary -> to install selenium library
+for RF.
+
+Go to plugins page and install-> intellibot(optional) and
+robot framework support plugins.
+
+Install robotframework-datadriver library for driving data from csv files.
+
+id, css and xpath are locators supported in robot
+
+To execute all the test files sequentially present in folder -> robot .
+
+install -> robotframework-pabot for parallel execution.
+To execute all the test files parallely -> pabot .
+
+To execute all the tests cases parallely -> pabot --testlevelsplit testDemo6.robot
+
+Place browser drivers under Resources directory, for running tests
+on browser based on our arguments.
+
+Settings
+Test Setup      open browser with argument url      Firefox
+
+Keywords
+open browser with argument url
+    [arguments]     ${browser_name}
+    create webdriver    ${browser_name}  executable_path=Resources/${browser_name}
+    go to   ${url}
+    maximize browser window
+
+To execute by test case name--> robot -t "Validate Unsuccessful login" testdemo2.robot
+
+To execute by test case name using reg expression -->
+robot -t "Validate*" testdemo2.robot
+
+To execute by test case name using reg expression, . means all tests -->
+robot -t "Validate*" .
+
+To execute by smoke test cases in entire folder-->
+robot --include SMOKE .
+
+To execute by smoke OR regression test cases in entire folder-->
+robot --include SMOKEORREGRESSION .
+
+To execute by smoke AND regression (both test cases of these tags will run)
+test cases in entire folder-->
+robot --include SMOKEANDREGRESSION .
+
+
+To execute all except one tag name in entire folder-->
+robot --exclude NEW FEATURE testdemo3.robot
+
+To execute all the tests in the folder-->
+robot --suite Tests .
+
+To re-run all failed test cases-->
+robot --rerunfailed output.xml testdemo6.robot
+
+
+To run tests on variable name of the browser from cmd-->
+robot --variable browsername:Chrome --include SMOKE testdemo6.robot

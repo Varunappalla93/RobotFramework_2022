@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20220611 09:35:15.380" rpa="false" schemaversion="2">
+<suite id="s1" name="testDemo4" source="C:\Users\VARUN\Desktop\Varun_Personal\RobotFramework_2022\Tests\testDemo4.robot">
+<test id="s1-t1" name="Invalid username">
+<kw name="Validate Unsuccessful login">
+<arg>varun</arg>
+<arg>varun@123</arg>
+<kw name="open browser with payment url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/VARUN/Desktop/Varun_Personal/Appium_Python_2022 _Material/chromedriver_win32/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220611 09:35:15.868" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220611 09:35:21.476" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220611 09:35:21.493" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 98
+Current browser version is 102.0.5005.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x005869A3+2582947]
+	Ordinal0 [0x0051A6D1+2139857]
+	Ordinal0 [0x00413A98+1063576]
+	Ordinal0 [0x004333B8+1192888]
+	Ordinal0 [0x0042F235+1176117]
+	Ordinal0 [0x0042C9E1+1165793]
+	Ordinal0 [0x0045CFFF+1363967]
+	Ordinal0 [0x0045CC2A+1362986]
+	Ordinal0 [0x00458366+1344358]
+	Ordinal0 [0x00435176+1200502]
+	Ordinal0 [0x00436066+1204326]
+	GetHandleVerifier [0x0072BE02+1675858]
+	GetHandleVerifier [0x007E036C+2414524]
+	GetHandleVerifier [0x0061BB01+560977]
+	GetHandleVerifier [0x0061A8D3+556323]
+	Ordinal0 [0x0052020E+2163214]
+	Ordinal0 [0x00525078+2183288]
+	Ordinal0 [0x005251C0+2183616]
+	Ordinal0 [0x0052EE1C+2223644]
+	BaseThreadInitThunk [0x77CAFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A4E+238]
+</msg>
+<status status="FAIL" starttime="20220611 09:35:15.868" endtime="20220611 09:35:21.493"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20220611 09:35:21.494" endtime="20220611 09:35:21.494"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220611 09:35:21.494" endtime="20220611 09:35:21.494"/>
+</kw>
+<status status="FAIL" starttime="20220611 09:35:15.868" endtime="20220611 09:35:21.495"/>
+</kw>
+<kw name="Fill the login form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220611 09:35:21.496" endtime="20220611 09:35:21.496"/>
+</kw>
+<kw name="wait until it checks and displays error message">
+<status status="NOT RUN" starttime="20220611 09:35:21.496" endtime="20220611 09:35:21.496"/>
+</kw>
+<kw name="VERIFY if error message is correct">
+<status status="NOT RUN" starttime="20220611 09:35:21.496" endtime="20220611 09:35:21.496"/>
+</kw>
+<status status="FAIL" starttime="20220611 09:35:15.867" endtime="20220611 09:35:21.497"/>
+</kw>
+<status status="FAIL" starttime="20220611 09:35:15.866" endtime="20220611 09:35:21.498">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 98
+Current browser version is 102.0.5005.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x005869A3+2582947]
+	Ordinal0 [0x0051A6D1+2139857]
+	Ordinal0 [0x00413A98+1063576]
+	Ordinal0 [0x004333B8+1192888]
+	Ordinal0 [0x0042F235+1176117]
+	Ordinal0 [0x0042C9E1+1165793]
+	Ordinal0 [0x0045CFFF+1363967]
+	Ordinal0 [0x0045CC2A+1362986]
+	Ordinal0 [0x00458366+1344358]
+	Ordinal0 [0x00435176+1200502]
+	Ordinal0 [0x00436066+1204326]
+	GetHandleVerifier [0x0072BE02+1675858]
+	GetHandleVerifier [0x007E036C+2414524]
+	GetHandleVerifier [0x0061BB01+560977]
+	GetHandleVerifier [0x0061A8D3+556323]
+	Ordinal0 [0x0052020E+2163214]
+	Ordinal0 [0x00525078+2183288]
+	Ordinal0 [0x005251C0+2183616]
+	Ordinal0 [0x0052EE1C+2223644]
+	BaseThreadInitThunk [0x77CAFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A4E+238]
+</status>
+</test>
+<test id="s1-t2" name="Invalid password">
+<kw name="Validate Unsuccessful login">
+<arg>rahulshetty</arg>
+<arg>pcloudfg</arg>
+<kw name="open browser with payment url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/VARUN/Desktop/Varun_Personal/Appium_Python_2022 _Material/chromedriver_win32/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220611 09:35:21.504" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220611 09:35:27.131" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220611 09:35:27.134" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 98
+Current browser version is 102.0.5005.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x005869A3+2582947]
+	Ordinal0 [0x0051A6D1+2139857]
+	Ordinal0 [0x00413A98+1063576]
+	Ordinal0 [0x004333B8+1192888]
+	Ordinal0 [0x0042F235+1176117]
+	Ordinal0 [0x0042C9E1+1165793]
+	Ordinal0 [0x0045CFFF+1363967]
+	Ordinal0 [0x0045CC2A+1362986]
+	Ordinal0 [0x00458366+1344358]
+	Ordinal0 [0x00435176+1200502]
+	Ordinal0 [0x00436066+1204326]
+	GetHandleVerifier [0x0072BE02+1675858]
+	GetHandleVerifier [0x007E036C+2414524]
+	GetHandleVerifier [0x0061BB01+560977]
+	GetHandleVerifier [0x0061A8D3+556323]
+	Ordinal0 [0x0052020E+2163214]
+	Ordinal0 [0x00525078+2183288]
+	Ordinal0 [0x005251C0+2183616]
+	Ordinal0 [0x0052EE1C+2223644]
+	BaseThreadInitThunk [0x77CAFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A4E+238]
+</msg>
+<status status="FAIL" starttime="20220611 09:35:21.503" endtime="20220611 09:35:27.134"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20220611 09:35:27.134" endtime="20220611 09:35:27.134"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220611 09:35:27.135" endtime="20220611 09:35:27.135"/>
+</kw>
+<status status="FAIL" starttime="20220611 09:35:21.503" endtime="20220611 09:35:27.136"/>
+</kw>
+<kw name="Fill the login form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220611 09:35:27.136" endtime="20220611 09:35:27.136"/>
+</kw>
+<kw name="wait until it checks and displays error message">
+<status status="NOT RUN" starttime="20220611 09:35:27.136" endtime="20220611 09:35:27.136"/>
+</kw>
+<kw name="VERIFY if error message is correct">
+<status status="NOT RUN" starttime="20220611 09:35:27.137" endtime="20220611 09:35:27.137"/>
+</kw>
+<status status="FAIL" starttime="20220611 09:35:21.502" endtime="20220611 09:35:27.138"/>
+</kw>
+<status status="FAIL" starttime="20220611 09:35:21.501" endtime="20220611 09:35:27.138">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 98
+Current browser version is 102.0.5005.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x005869A3+2582947]
+	Ordinal0 [0x0051A6D1+2139857]
+	Ordinal0 [0x00413A98+1063576]
+	Ordinal0 [0x004333B8+1192888]
+	Ordinal0 [0x0042F235+1176117]
+	Ordinal0 [0x0042C9E1+1165793]
+	Ordinal0 [0x0045CFFF+1363967]
+	Ordinal0 [0x0045CC2A+1362986]
+	Ordinal0 [0x00458366+1344358]
+	Ordinal0 [0x00435176+1200502]
+	Ordinal0 [0x00436066+1204326]
+	GetHandleVerifier [0x0072BE02+1675858]
+	GetHandleVerifier [0x007E036C+2414524]
+	GetHandleVerifier [0x0061BB01+560977]
+	GetHandleVerifier [0x0061A8D3+556323]
+	Ordinal0 [0x0052020E+2163214]
+	Ordinal0 [0x00525078+2183288]
+	Ordinal0 [0x005251C0+2183616]
+	Ordinal0 [0x0052EE1C+2223644]
+	BaseThreadInitThunk [0x77CAFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A4E+238]
+</status>
+</test>
+<test id="s1-t3" name="special characters">
+<kw name="Validate Unsuccessful login">
+<arg>%$Q#^</arg>
+<arg>learning</arg>
+<kw name="open browser with payment url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/VARUN/Desktop/Varun_Personal/Appium_Python_2022 _Material/chromedriver_win32/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220611 09:35:27.146" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220611 09:35:32.644" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220611 09:35:32.646" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 98
+Current browser version is 102.0.5005.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x005869A3+2582947]
+	Ordinal0 [0x0051A6D1+2139857]
+	Ordinal0 [0x00413A98+1063576]
+	Ordinal0 [0x004333B8+1192888]
+	Ordinal0 [0x0042F235+1176117]
+	Ordinal0 [0x0042C9E1+1165793]
+	Ordinal0 [0x0045CFFF+1363967]
+	Ordinal0 [0x0045CC2A+1362986]
+	Ordinal0 [0x00458366+1344358]
+	Ordinal0 [0x00435176+1200502]
+	Ordinal0 [0x00436066+1204326]
+	GetHandleVerifier [0x0072BE02+1675858]
+	GetHandleVerifier [0x007E036C+2414524]
+	GetHandleVerifier [0x0061BB01+560977]
+	GetHandleVerifier [0x0061A8D3+556323]
+	Ordinal0 [0x0052020E+2163214]
+	Ordinal0 [0x00525078+2183288]
+	Ordinal0 [0x005251C0+2183616]
+	Ordinal0 [0x0052EE1C+2223644]
+	BaseThreadInitThunk [0x77CAFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A4E+238]
+</msg>
+<status status="FAIL" starttime="20220611 09:35:27.146" endtime="20220611 09:35:32.647"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20220611 09:35:32.647" endtime="20220611 09:35:32.647"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220611 09:35:32.648" endtime="20220611 09:35:32.648"/>
+</kw>
+<status status="FAIL" starttime="20220611 09:35:27.145" endtime="20220611 09:35:32.649"/>
+</kw>
+<kw name="Fill the login form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220611 09:35:32.649" endtime="20220611 09:35:32.650"/>
+</kw>
+<kw name="wait until it checks and displays error message">
+<status status="NOT RUN" starttime="20220611 09:35:32.650" endtime="20220611 09:35:32.650"/>
+</kw>
+<kw name="VERIFY if error message is correct">
+<status status="NOT RUN" starttime="20220611 09:35:32.650" endtime="20220611 09:35:32.650"/>
+</kw>
+<status status="FAIL" starttime="20220611 09:35:27.144" endtime="20220611 09:35:32.651"/>
+</kw>
+<status status="FAIL" starttime="20220611 09:35:27.143" endtime="20220611 09:35:32.651">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 98
+Current browser version is 102.0.5005.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x005869A3+2582947]
+	Ordinal0 [0x0051A6D1+2139857]
+	Ordinal0 [0x00413A98+1063576]
+	Ordinal0 [0x004333B8+1192888]
+	Ordinal0 [0x0042F235+1176117]
+	Ordinal0 [0x0042C9E1+1165793]
+	Ordinal0 [0x0045CFFF+1363967]
+	Ordinal0 [0x0045CC2A+1362986]
+	Ordinal0 [0x00458366+1344358]
+	Ordinal0 [0x00435176+1200502]
+	Ordinal0 [0x00436066+1204326]
+	GetHandleVerifier [0x0072BE02+1675858]
+	GetHandleVerifier [0x007E036C+2414524]
+	GetHandleVerifier [0x0061BB01+560977]
+	GetHandleVerifier [0x0061A8D3+556323]
+	Ordinal0 [0x0052020E+2163214]
+	Ordinal0 [0x00525078+2183288]
+	Ordinal0 [0x005251C0+2183616]
+	Ordinal0 [0x0052EE1C+2223644]
+	BaseThreadInitThunk [0x77CAFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DF7A4E+238]
+</status>
+</test>
+<doc>To Validate the login form</doc>
+<status status="FAIL" starttime="20220611 09:35:15.383" endtime="20220611 09:35:32.655"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="testDemo4">testDemo4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
